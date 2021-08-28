@@ -1,44 +1,93 @@
+<style>
 
-  <!-- ----------------- PAGE LEAD ---------------- -->
-  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Content</h1>
-    <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "</p>
+  h1::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -200px; 
+    height: 200px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+  h2::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -115px; 
+    height: 115px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+  li {
+    margin: 0 10px 0;
+  }
+
+</style>
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light" style="margin-top: 0; position: sticky; top: 56px; z-index: 1;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#blog/top">Top</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#blog/blogPostOne">Blog Post One</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#blog/blogPostTwo">Blog Post Two</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#blog/blogPostThree">Blog Post Three</a>
+        </li>
+      </ul>
+    </div>
   </div>
+</nav>
+
+<!-- ----------------- PAGE LEAD ---------------- -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 id="top" class="display-4">Content</h1>
+  <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "</p>
+</div>
 
 
-  <!-- ----------------- FEATURED ---------------- -->
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+<!-- ----------------- FEATURED ---------------- -->
+<div class="row mb-2">
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">World</strong>
+        <h3 class="mb-0">Featured post</h3>
+        <div class="mb-1 text-muted">Nov 12</div>
+        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="#blog" class="stretched-link">Continue reading</a>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-        </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Post title</h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  </div>
+  <div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success">Design</strong>
+        <h3 class="mb-0">Post title</h3>
+        <div class="mb-1 text-muted">Nov 11</div>
+        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="#blog" class="stretched-link">Continue reading</a>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-        </div>
       </div>
     </div>
   </div>
+</div>
 
 
   <!-- CONTENT -->
@@ -50,12 +99,12 @@
       </h3>
 
       <div class="blog-post">
-        <h2 class="blog-post-title">Sample blog post</h2>
-        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+        <h2 id="blogPostOne" class="blog-post-title">Blog Post One</h2>
+        <p class="blog-post-meta">January 1, 2014 by <a href="#blog">Mark</a></p>
 
         <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
         <hr>
-        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Cum sociis natoque penatibus et magnis <a href="#blog">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
         <blockquote>
           <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </blockquote>
@@ -80,23 +129,30 @@
           <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
         </ol>
         <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero enim sed faucibus turpis in. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Enim nec dui nunc mattis enim ut tellus elementum. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Ut sem nulla pharetra diam sit amet nisl. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Semper viverra nam libero justo laoreet sit amet cursus sit. Volutpat ac tincidunt vitae semper quis. Proin gravida hendrerit lectus a. Elit sed vulputate mi sit amet mauris commodo quis. Diam vulputate ut pharetra sit amet aliquam id diam. Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis.</p>
+        <p>Velit laoreet id donec ultrices tincidunt. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Mauris rhoncus aenean vel elit scelerisque mauris. Vitae elementum curabitur vitae nunc sed velit. Vulputate mi sit amet mauris commodo quis imperdiet massa. Eget mauris pharetra et ultrices neque ornare aenean. Congue quisque egestas diam in arcu cursus euismod. Convallis a cras semper auctor neque vitae tempus quam. Dui id ornare arcu odio. Euismod nisi porta lorem mollis aliquam ut. Est ultricies integer quis auctor elit sed. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Rutrum quisque non tellus orci ac.</p>
       </div><!-- /.blog-post -->
 
       <div class="blog-post">
-        <h2 class="blog-post-title">Another blog post</h2>
-        <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+        <h2 id="blogPostTwo" class="blog-post-title">Blog Post Two</h2>
+        <p class="blog-post-meta">December 23, 2013 by <a href="#blog">Jacob</a></p>
 
-        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Cum sociis natoque penatibus et magnis <a href="#blog">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
         <blockquote>
           <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </blockquote>
         <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
         <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero enim sed faucibus turpis in. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Enim nec dui nunc mattis enim ut tellus elementum. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Ut sem nulla pharetra diam sit amet nisl. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Semper viverra nam libero justo laoreet sit amet cursus sit. Volutpat ac tincidunt vitae semper quis. Proin gravida hendrerit lectus a. Elit sed vulputate mi sit amet mauris commodo quis. Diam vulputate ut pharetra sit amet aliquam id diam. Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis.</p>
+        <p>Velit laoreet id donec ultrices tincidunt. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Mauris rhoncus aenean vel elit scelerisque mauris. Vitae elementum curabitur vitae nunc sed velit. Vulputate mi sit amet mauris commodo quis imperdiet massa. Eget mauris pharetra et ultrices neque ornare aenean. Congue quisque egestas diam in arcu cursus euismod. Convallis a cras semper auctor neque vitae tempus quam. Dui id ornare arcu odio. Euismod nisi porta lorem mollis aliquam ut. Est ultricies integer quis auctor elit sed. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Rutrum quisque non tellus orci ac.</p>
+        <p>Ullamcorper malesuada proin libero nunc consequat interdum. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Nisi lacus sed viverra tellus in hac habitasse platea. Accumsan tortor posuere ac ut. Gravida rutrum quisque non tellus orci. Est ante in nibh mauris cursus mattis molestie a iaculis. Tempor id eu nisl nunc mi ipsum. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Molestie a iaculis at erat pellentesque adipiscing commodo elit. Urna nec tincidunt praesent semper feugiat. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Elementum eu facilisis sed odio. Senectus et netus et malesuada fames ac turpis egestas. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Volutpat odio facilisis mauris sit. Pretium aenean pharetra magna ac placerat vestibulum. Blandit libero volutpat sed cras ornare arcu dui. Nisl pretium fusce id velit ut tortor pretium. Pulvinar pellentesque habitant morbi tristique senectus et.</p>
+        <p>Fermentum et sollicitudin ac orci phasellus. Praesent semper feugiat nibh sed pulvinar proin gravida. Eget mauris pharetra et ultrices neque ornare aenean euismod. Sem fringilla ut morbi tincidunt augue. Pharetra diam sit amet nisl. Mauris vitae ultricies leo integer malesuada nunc vel risus. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Neque laoreet suspendisse interdum consectetur libero id. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Arcu dictum varius duis at. Viverra ipsum nunc aliquet bibendum enim facilisis. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices.</p>
+        <p>Neque aliquam vestibulum morbi blandit cursus. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Ullamcorper eget nulla facilisi etiam dignissim. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. Purus sit amet volutpat consequat mauris nunc congue nisi. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Volutpat sed cras ornare arcu dui. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Vestibulum rhoncus est pellentesque elit. Scelerisque felis imperdiet proin fermentum. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Diam vulputate ut pharetra sit amet. Purus faucibus ornare suspendisse sed nisi lacus sed. Risus ultricies tristique nulla aliquet. Mi bibendum neque egestas congue quisque. Duis at consectetur lorem donec massa sapien faucibus. Amet tellus cras adipiscing enim eu turpis egestas pretium. Vitae ultricies leo integer malesuada nunc vel risus commodo.</p>
       </div><!-- /.blog-post -->
 
       <div class="blog-post">
-        <h2 class="blog-post-title">New feature</h2>
-        <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+        <h2 id="blogPostThree" class="blog-post-title">Blog Post Three</h2>
+        <p class="blog-post-meta">December 14, 2013 by <a href="#blog">Chris</a></p>
 
         <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <ul>
@@ -106,11 +162,16 @@
         </ul>
         <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
         <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero enim sed faucibus turpis in. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Enim nec dui nunc mattis enim ut tellus elementum. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Ut sem nulla pharetra diam sit amet nisl. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Semper viverra nam libero justo laoreet sit amet cursus sit. Volutpat ac tincidunt vitae semper quis. Proin gravida hendrerit lectus a. Elit sed vulputate mi sit amet mauris commodo quis. Diam vulputate ut pharetra sit amet aliquam id diam. Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis.</p>
+        <p>Velit laoreet id donec ultrices tincidunt. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Mauris rhoncus aenean vel elit scelerisque mauris. Vitae elementum curabitur vitae nunc sed velit. Vulputate mi sit amet mauris commodo quis imperdiet massa. Eget mauris pharetra et ultrices neque ornare aenean. Congue quisque egestas diam in arcu cursus euismod. Convallis a cras semper auctor neque vitae tempus quam. Dui id ornare arcu odio. Euismod nisi porta lorem mollis aliquam ut. Est ultricies integer quis auctor elit sed. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Rutrum quisque non tellus orci ac.</p>
+        <p>Ullamcorper malesuada proin libero nunc consequat interdum. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Nisi lacus sed viverra tellus in hac habitasse platea. Accumsan tortor posuere ac ut. Gravida rutrum quisque non tellus orci. Est ante in nibh mauris cursus mattis molestie a iaculis. Tempor id eu nisl nunc mi ipsum. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Molestie a iaculis at erat pellentesque adipiscing commodo elit. Urna nec tincidunt praesent semper feugiat. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Elementum eu facilisis sed odio. Senectus et netus et malesuada fames ac turpis egestas. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Volutpat odio facilisis mauris sit. Pretium aenean pharetra magna ac placerat vestibulum. Blandit libero volutpat sed cras ornare arcu dui. Nisl pretium fusce id velit ut tortor pretium. Pulvinar pellentesque habitant morbi tristique senectus et.</p>
+        <p>Fermentum et sollicitudin ac orci phasellus. Praesent semper feugiat nibh sed pulvinar proin gravida. Eget mauris pharetra et ultrices neque ornare aenean euismod. Sem fringilla ut morbi tincidunt augue. Pharetra diam sit amet nisl. Mauris vitae ultricies leo integer malesuada nunc vel risus. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Neque laoreet suspendisse interdum consectetur libero id. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Arcu dictum varius duis at. Viverra ipsum nunc aliquet bibendum enim facilisis. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices.</p>
+        <p>Neque aliquam vestibulum morbi blandit cursus. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Ullamcorper eget nulla facilisi etiam dignissim. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. Purus sit amet volutpat consequat mauris nunc congue nisi. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Volutpat sed cras ornare arcu dui. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Vestibulum rhoncus est pellentesque elit. Scelerisque felis imperdiet proin fermentum. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Diam vulputate ut pharetra sit amet. Purus faucibus ornare suspendisse sed nisi lacus sed. Risus ultricies tristique nulla aliquet. Mi bibendum neque egestas congue quisque. Duis at consectetur lorem donec massa sapien faucibus. Amet tellus cras adipiscing enim eu turpis egestas pretium. Vitae ultricies leo integer malesuada nunc vel risus commodo.</p>
       </div><!-- /.blog-post -->
 
       <nav class="blog-pagination">
-        <a class="btn btn-outline-primary" href="#">Older</a>
-        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+        <a class="btn btn-outline-primary" href="#blog">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#blog" tabindex="-1" aria-disabled="true">Newer</a>
       </nav>
 
     </div>
@@ -124,27 +185,27 @@
       <div class="p-4">
         <h4 class="font-italic">Archives</h4>
         <ol class="list-unstyled mb-0">
-          <li><a href="#">March 2014</a></li>
-          <li><a href="#">February 2014</a></li>
-          <li><a href="#">January 2014</a></li>
-          <li><a href="#">December 2013</a></li>
-          <li><a href="#">November 2013</a></li>
-          <li><a href="#">October 2013</a></li>
-          <li><a href="#">September 2013</a></li>
-          <li><a href="#">August 2013</a></li>
-          <li><a href="#">July 2013</a></li>
-          <li><a href="#">June 2013</a></li>
-          <li><a href="#">May 2013</a></li>
-          <li><a href="#">April 2013</a></li>
+          <li><a href="#blog">March 2014</a></li>
+          <li><a href="#blog">February 2014</a></li>
+          <li><a href="#blog">January 2014</a></li>
+          <li><a href="#blog">December 2013</a></li>
+          <li><a href="#blog">November 2013</a></li>
+          <li><a href="#blog">October 2013</a></li>
+          <li><a href="#blog">September 2013</a></li>
+          <li><a href="#blog">August 2013</a></li>
+          <li><a href="#blog">July 2013</a></li>
+          <li><a href="#blog">June 2013</a></li>
+          <li><a href="#blog">May 2013</a></li>
+          <li><a href="#blog">April 2013</a></li>
         </ol>
       </div>
 
       <div class="p-4">
         <h4 class="font-italic">Elsewhere</h4>
         <ol class="list-unstyled">
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
+          <li><a href="#blog">GitHub</a></li>
+          <li><a href="#blog">Twitter</a></li>
+          <li><a href="#blog">Facebook</a></li>
         </ol>
       </div>
     </aside>
@@ -162,30 +223,30 @@
       <div class="col-6 col-md">
         <h5>Features</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Cool stuff</a></li>
-          <li><a class="link-secondary" href="#">Random feature</a></li>
-          <li><a class="link-secondary" href="#">Team feature</a></li>
-          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-          <li><a class="link-secondary" href="#">Another one</a></li>
-          <li><a class="link-secondary" href="#">Last time</a></li>
+          <li><a class="link-secondary" href="#blog">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#blog">Random feature</a></li>
+          <li><a class="link-secondary" href="#blog">Team feature</a></li>
+          <li><a class="link-secondary" href="#blog">Stuff for developers</a></li>
+          <li><a class="link-secondary" href="#blog">Another one</a></li>
+          <li><a class="link-secondary" href="#blog">Last time</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
         <h5>Resources</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Resource</a></li>
-          <li><a class="link-secondary" href="#">Resource name</a></li>
-          <li><a class="link-secondary" href="#">Another resource</a></li>
-          <li><a class="link-secondary" href="#">Final resource</a></li>
+          <li><a class="link-secondary" href="#blog">Resource</a></li>
+          <li><a class="link-secondary" href="#blog">Resource name</a></li>
+          <li><a class="link-secondary" href="#blog">Another resource</a></li>
+          <li><a class="link-secondary" href="#blog">Final resource</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
         <h5>About</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Team</a></li>
-          <li><a class="link-secondary" href="#">Locations</a></li>
-          <li><a class="link-secondary" href="#">Privacy</a></li>
-          <li><a class="link-secondary" href="#">Terms</a></li>
+          <li><a class="link-secondary" href="#blog">Team</a></li>
+          <li><a class="link-secondary" href="#blog">Locations</a></li>
+          <li><a class="link-secondary" href="#blog">Privacy</a></li>
+          <li><a class="link-secondary" href="#blog">Terms</a></li>
         </ul>
       </div>
     </div>
